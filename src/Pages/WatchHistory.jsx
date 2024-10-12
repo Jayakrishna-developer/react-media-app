@@ -36,6 +36,7 @@ const removewatchHistory = async (id) => {
         style={styles.headerContainer}
       >
         <div className="watchhistory">
+          
           <h3 style={styles.headerText}>Watch History</h3>
         </div>
         <div className="backtohome">
