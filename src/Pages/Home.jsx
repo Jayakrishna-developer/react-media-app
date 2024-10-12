@@ -27,19 +27,15 @@ function Home() {
       </div>
 
       <div className="container-fluid w-100 mt-5 mb-5 row">
-        <div className="n"></div>
-        <div
-          style={{ marginBottom: "200px" }}
-          className="all-videos col-lg-8 col-md-12 col-sm-12 col-12"
-        >
+        
+        <div style={{ marginBottom: "200px" }} className="all-videos col-lg-8  col-md-12">
           <h1>All videos</h1>
           <View
             uploadVideoResponse={uploadVideoResponse}
             setDropVideoResponse={setDropVideoResponse}
           />
         </div>
-        <div className="col-1"></div>
-        <div className="all-videos col-lg-3 col-md-11 col-sm-3 col-11">
+        <div className="all-videos col-md-5 col-lg-4">
           <Category dropvideoResponse={dropvideoResponse} />
         </div>
       </div>
