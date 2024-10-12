@@ -1,4 +1,8 @@
-/* Card styles with animation, border, and background */
+body {
+    overflow-x: hidden;
+}
+
+/* General card styles */
 .feature-card {
     background-color: #f8f9fa;
     border: 2px solid #007bff;
@@ -7,13 +11,12 @@
     color: #333;
 }
 
-/* Card hover animation */
 .feature-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Button styles */
+/* Custom button styles */
 .custom-button {
     background-color: #007bff;
     border: 2px solid #007bff;
@@ -23,14 +26,13 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Button hover effect */
 .custom-button:hover {
     background-color: white;
     color: #007bff;
     border-color: #007bff;
 }
 
-/* Scroll animation for cards */
+/* Slide in animation for cards */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -43,16 +45,19 @@
     }
 }
 
-/* Styling the card title and text */
-.feature-card .card-title {
-    font-weight: bold;
-    color: #007bff;
+.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
-.feature-card .card-text {
-    font-size: 0.95rem;
-    color: #666;
+/* Ensure no overflowing elements */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-body{
-    overflow-x: hidden;
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
 }
